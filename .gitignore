@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 #vscode tools
-.vscode
+.vscode/
 
 # Package Files #
 *.jar
