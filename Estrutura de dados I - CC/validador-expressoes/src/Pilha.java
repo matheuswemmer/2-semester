@@ -1,13 +1,13 @@
-public class Pilha{
-    private int[] pilha;
+public class Pilha {
+    private final char[] pilha;
     private int topo;
 
     public Pilha(int capacidade){
-        pilha = new int[capacidade];
+        pilha = new char[capacidade];
         topo = -1;
     }
 
-    public void push(int valor){
+    public void push(char valor){
         if(topo < pilha.length - 1){
             topo++;
             pilha[topo] = valor;
@@ -16,15 +16,13 @@ public class Pilha{
         }
     }
 
-    public int pop(){
+    public Character pop(){
         if(topo >= 0){
-            int valor = pilha[topo];
+            char valor = pilha[topo];
             topo--;
             return valor;
-        } else {
-            System.out.println("Pilha vazia!");
-            return -1; // Valor de erro
-        }
+        } 
+        return null;
     }
 
     public boolean isEmpty(){
